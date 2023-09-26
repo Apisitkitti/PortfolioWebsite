@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:visited{
+  text-decoration:none;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 70px;
+  padding: 50px 0;
+  align-items: center;
+  box-shadow: 0 0 50px rgb(188, 188, 188);
+  font-family: 'Dela Gothic One', cursive;
+  padding: 50px;
+}
+.container-header-left{
+  display:flex;
+  padding-left: 100px;
+  cursor: pointer;
+}
+.container-header-center{
+  display: flex;
+  
+}
+.container-header-center a{
+  padding: 0 100px;
+  text-decoration: none;
+  color: black;
+  transition: text-decoration 0.5s;
+}
+.container-header-center a:hover{
+  text-decoration: underline;
+}
+.container-header-right{
+  display: flex;
+  padding-right: 100px;
+}
+#project-button{
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 48px;
+  padding: 30px 60px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+/* #project-button:hover{
+  background-color: rgb(66, 66, 66);
+} */

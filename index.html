@@ -25,11 +25,11 @@
         <nav class="menu-bar">
           <a href="#">HOME</a>
           <a href="#">ABOUT</a>
-          <a href="#">SKILLS</a>
+          <a href="#skills">SKILLS</a>
         </nav>
       </div>
       <div class="container-header-right">
-        <button id="project-button">CONTACT</button>
+       <a href="#work"> <button id="project-button">MYWORK</button></a>
       </div>
     </div>
   </header>
@@ -46,25 +46,48 @@
     </div>
   </div>
   <br>
-  <!-- <div class="about-me">
-      <div class="hobby">
-        <div class="hobby-head">
+      <div class="hobby" >
+        <div class="aboutme-container">
           <p id="about-tag"> ABOUT ME</p>
+          <div class="hobby-container">
+
+          </div>
+
+          <div class="interest container">
+
+          </div>
         </div>
-      </div> -->
-  <div class="skills">
+      <section class="skills" id="skills">
     <p id="about-tag"> SKILLS</p>
     <div class="skill-container">
-      <img src="./img/UnityLogo.png" alt="unitylogo" />
-
-      <img src="./img/HTML.png" alt="htmllogo" />
-      <img src="./img/CSS.png" alt="csslogo" />
-
+      <img src="./img/UnityLogo.png" alt="unitylogo" id="unity"/>
+      <img src="./img/HTML.png" alt="htmllogo" id="html"/>
+      <img src="./img/CSS.png" alt="csslogo" id="css" />
       <img src="./img/java.png" alt="javalogo" id="java" />
+    </div>
+      </section>
+  <section class="work" id="work">
+
+    
+      <p id="assignmet-head">ASSIGNMENT</p>
+      <div class="assignment">
+        <a href="./assignment/assignment4/recipe.html">
+          <button id="assignment-button">Recipe: Gluten Free General Tso’sChicken</button>
+        </a>
+        <a href="./assignment/assignment5/index.html">
+          <button id="assignment-button">Blog</button>
+        </a>
+        <a href="./assignment/assignment6/index.html">
+          <button id="assignment-button">Register&Login</button>
+        </a>
+        <a href="./assignment/assignment7/index.html">
+          <button id="assignment-button">SquareGame</button>
+        </a>
+    </div>
+    <div class="project">
 
     </div>
-  </div>
-  </div>
+  </section>
 </body>
 
 </html>

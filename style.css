@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -65,7 +66,7 @@ header {
 #project-button {
   font-family: 'Dela Gothic One', cursive;
   font-size: 50%;
-  padding: 5% 10%;
+  padding: 10px;
   border-radius: 20px;
   color: white;
   background-color: black;
@@ -116,12 +117,22 @@ header {
   grid-template-rows: auto;
   text-align: center;
 }
-.hobby-container {
+.interest-container,.hobby-container{
+  list-style: none;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+  font-size: 100%;
   display: block;
+  color:black;
+  transition: padding 1s;
+  font-family: 'Dela Gothic One', cursive;
+}
+.hobby-container {
   grid-row: 2;
   grid-column: 2;
-  color: white;
-  list-style: none;
+  
 }
 #about-tag {
   display: block;
@@ -132,12 +143,11 @@ header {
 }
 
 .interest-container {
-  display: block;
-  color: white;
-  list-style: none;
-  font-size: 100%;
   grid-column: 1;
   grid-row: 2;
+}
+.interest-container:hover,.hobby-container:hover{
+  padding: 30px;
 }
 
 .skills {
@@ -175,6 +185,7 @@ header {
   font-size: 500%;
   align-items: center;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .assignment,.project {
@@ -203,4 +214,42 @@ header {
 }
 .assignment:hover,.project:hover {
   width: 100vw;
+}
+
+footer{
+  background-color: white;
+  width: 100vw;
+  
+}
+.social{
+  margin-top: 10%;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+.social a{
+  font-size: 150%;
+  padding: 0 10px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .container-header-left{
+    grid-column: 1/ span 3;
+    grid-row: 1;
+    text-align: center;
+  }
+  .container-header-center{
+    grid-row: 2;
+    grid-column: 1/ span 3;
+    justify-content: center;
+  }
+  .container-header-right{
+    grid-row: 3;
+    grid-column: 1/ span 3;
+  }
+
+}
+@media only screen and (max-width: 560px){
+
 }

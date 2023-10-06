@@ -111,13 +111,16 @@ header {
   object-position: 55%;
 
 }
-.aboutme-container{
+
+.aboutme-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   text-align: center;
 }
-.interest-container,.hobby-container{
+
+.interest-container,
+.hobby-container {
   list-style: none;
   background-color: white;
   margin: auto;
@@ -125,15 +128,17 @@ header {
   border-radius: 30px;
   font-size: 100%;
   display: block;
-  color:black;
+  color: black;
   transition: padding 1s;
   font-family: 'Dela Gothic One', cursive;
 }
+
 .hobby-container {
   grid-row: 2;
   grid-column: 2;
-  
+
 }
+
 #about-tag {
   display: block;
   color: white;
@@ -146,7 +151,9 @@ header {
   grid-column: 1;
   grid-row: 2;
 }
-.interest-container:hover,.hobby-container:hover{
+
+.interest-container:hover,
+.hobby-container:hover {
   padding: 30px;
 }
 
@@ -188,7 +195,8 @@ header {
   margin-bottom: 5%;
 }
 
-.assignment,.project {
+.assignment,
+.project {
   display: flex;
   border: 1px solid rgb(95, 94, 94);
   justify-content: space-around;
@@ -212,48 +220,151 @@ header {
   background-color: black;
   cursor: pointer;
 }
-.assignment:hover,.project:hover {
+
+.assignment:hover,
+.project:hover {
   width: 100vw;
 }
 
-footer{
+footer {
   background-color: white;
   width: 100vw;
   display: block;
   box-shadow: 0 0 50px rgb(188, 188, 188);
   top: 0;
-  
+
 }
-.social{
+
+.social {
   margin-top: 10%;
   color: black;
   background-color: white;
   text-align: center;
   padding: 10px;
 }
-.social a{
+
+.social a {
   font-size: 150%;
   padding: 0 10px;
   text-decoration: none;
 }
+
 @media only screen and (max-width: 768px) {
-  .container-header-left{
-    grid-column: 1/ span 3;
-    grid-row: 1;
-    text-align: center;
+  .container-header-left {
+    visibility: hidden;
   }
-  .container-header-center{
-    grid-row: 2;
+
+  .container-header-center {
+    grid-row: 1;
     grid-column: 1/ span 3;
     justify-content: center;
+    margin-top: 5%;
   }
-  .container-header-right{
-    grid-row: 3;
+
+  .container-header-right {
+    margin-top: 5%;
+    grid-row: 2;
     grid-column: 1/ span 3;
   }
+
+  .profile-name {
+    font-size: 200%;
+    grid-column: 1/ span2;
+    margin: 10px auto;
+  }
+
+  #profile-picture {
+    grid-column: 1/ span2;
+    margin-top: 10%;
+
+  }
+
+  .aboutme-container {
+    font-size: 0px;
+    transition: font-size 1s;
+  }
+
+  .aboutme-container:hover {
+    font-size: 100%;
+  }
+
+  .skill-container {
+    width: 70vw;
+  }
+
+  .assignment {
+    width: 70vw;
+    
+  }
+  #assignment-button{
+    font-size: 50%;
+  }
+
+
+  .project {
+    width: 70vw;
+  }
+}
+  @media only screen and (max-width: 560px) {
+    .container-header-left {
+      visibility: hidden;
+    }
   
-
-}
-@media only screen and (max-width: 560px){
-
-}
+    .container-header-center {
+      grid-row: 1;
+      grid-column: 1/ span 3;
+      justify-content: center;
+      margin-top: 5%;
+    }
+  
+    .container-header-right {
+      margin-top: 5%;
+      grid-row: 2;
+      grid-column: 1/ span 3;
+    }
+  
+    .profile-name {
+      font-size: 200%;
+      grid-column: 1/ span2;
+      margin: 10px auto;
+    }
+  
+    #profile-picture {
+      grid-column: 1/ span2;
+      margin-top: 10%;
+      object-fit: contain;
+  
+    }
+  
+    .aboutme-container {
+      font-size: 0px;
+      transition: font-size 1s;
+    }
+  
+    .aboutme-container:hover {
+      font-size: 100%;
+    }
+  
+    .skill-container {
+      width: 70vw;
+    }
+  
+    .assignment {
+      width: 70vw;
+      
+    }
+    #assignment-button{
+      font-size: 30%;
+    }
+  
+  
+    .project {
+      width: 70vw;
+    }
+    .assignmet-head{
+      font-size: 300%;
+    }
+    #about-tag{
+      font-size: 100%;
+    }
+  }

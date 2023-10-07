@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
+
 }
 
 html {
@@ -249,6 +250,19 @@ footer {
   text-decoration: none;
 }
 
+
+#project-tag {
+  display: flex;
+  font-size: 500%;
+  font-family: 'Pixelify Sans', cursive;
+  color: white;
+  justify-content: center;
+  margin-top: 2%;
+}
+.project-image{
+  display: flex;
+}
+
 @media only screen and (max-width: 768px) {
   .container-header-left {
     visibility: hidden;
@@ -294,9 +308,10 @@ footer {
 
   .assignment {
     width: 70vw;
-    
+
   }
-  #assignment-button{
+
+  #assignment-button {
     font-size: 50%;
   }
 
@@ -305,66 +320,71 @@ footer {
     width: 70vw;
   }
 }
-  @media only screen and (max-width: 560px) {
-    .container-header-left {
-      visibility: hidden;
-    }
-  
-    .container-header-center {
-      grid-row: 1;
-      grid-column: 1/ span 3;
-      justify-content: center;
-      margin-top: 5%;
-    }
-  
-    .container-header-right {
-      margin-top: 5%;
-      grid-row: 2;
-      grid-column: 1/ span 3;
-    }
-  
-    .profile-name {
-      font-size: 200%;
-      grid-column: 1/ span2;
-      margin: 10px auto;
-    }
-  
-    #profile-picture {
-      grid-column: 1/ span2;
-      margin-top: 10%;
-      object-fit: contain;
-  
-    }
-  
-    .aboutme-container {
-      font-size: 0px;
-      transition: font-size 1s;
-    }
-  
-    .aboutme-container:hover {
-      font-size: 100%;
-    }
-  
-    .skill-container {
-      width: 70vw;
-    }
-  
-    .assignment {
-      width: 70vw;
-      
-    }
-    #assignment-button{
-      font-size: 30%;
-    }
-  
-  
-    .project {
-      width: 70vw;
-    }
-    .assignmet-head{
-      font-size: 300%;
-    }
-    #about-tag{
-      font-size: 100%;
-    }
+
+@media only screen and (max-width: 560px) {
+  .container-header-left {
+    visibility: hidden;
   }
+
+  .container-header-center {
+    grid-row: 1;
+    grid-column: 1/ span 3;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .container-header-right {
+    margin-top: 5%;
+    grid-row: 2;
+    grid-column: 1/ span 3;
+  }
+
+  .profile-name {
+    font-size: 200%;
+    grid-column: 1/ span2;
+    margin: 10px auto;
+  }
+
+  #profile-picture {
+    grid-column: 1/ span2;
+    margin-top: 10%;
+    object-fit: contain;
+    width: 100vw;
+
+  }
+
+  .aboutme-container {
+    font-size: 0px;
+    transition: font-size 1s;
+  }
+
+  .aboutme-container:hover {
+    font-size: 100%;
+  }
+
+  .skill-container {
+    width: 70vw;
+  }
+
+  .assignment {
+    width: 70vw;
+
+  }
+
+  #assignment-button {
+    font-size: 30%;
+  }
+
+
+  .project {
+    width: 70vw;
+  }
+
+  .assignmet-head {
+    font-size: 300%;
+  }
+
+  #about-tag {
+    font-size: 100%;
+  }
+}

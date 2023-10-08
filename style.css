@@ -101,7 +101,6 @@ header {
 
 #profile-picture {
   grid-column: 2;
-  margin: 0 auto;
 }
 
 #profile-pic {
@@ -110,7 +109,6 @@ header {
   object-fit: cover;
   border-radius: 20px;
   object-position: 55%;
-
 }
 
 .aboutme-container {
@@ -232,21 +230,22 @@ footer {
   display: block;
   box-shadow: 0 0 50px rgb(188, 188, 188);
   top: 0;
-
+  bottom: 0;
 }
 
 .social {
+  font-family:'Dela Gothic One', cursive;;
   margin-top: 10%;
   color: black;
   background-color: white;
   text-align: center;
   padding: 10px;
+  font-size: 150%;
 }
 
-.social a {
-  font-size: 150%;
-  padding: 0 10px;
-  text-decoration: none;
+.social img {
+  width: 5%;
+  margin: 1%;
 }
 
 
@@ -258,10 +257,41 @@ footer {
   justify-content: center;
   margin-top: 2%;
 }
+.project-slider{
+  display: flex;
+  margin-top: 5%;
+}
 .project-image{
   display: flex;
+  justify-content: center;
 }
-
+.project-image img{
+  width: 30%;
+  padding: 1%;
+  border-radius: 50%;
+}
+.content-game{
+  border: 5px solid white ;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  border-radius: 10px;
+  padding: 1%;
+  font-family: 'Pixelify Sans', cursive;
+}
+#content-ingame{
+  color: white;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+}
+.game-template{
+  margin-top: 5%;
+  font-size: 300%;
+  color: white;
+  font-family: 'Pixelify Sans', cursive;
+  text-align: center;
+}
 @media only screen and (max-width: 768px) {
   .container-header-left {
     visibility: hidden;
@@ -287,7 +317,8 @@ footer {
   }
 
   #profile-picture {
-    grid-column: 1/ span2;
+    grid-column: 1/ span 2;
+    width: 1vw;
     margin-top: 10%;
 
   }
@@ -313,12 +344,14 @@ footer {
   #assignment-button {
     font-size: 50%;
   }
-
-
   .project {
     width: 70vw;
   }
-}
+  .project-content{
+    font-size: 50%;
+  }
+
+
 
 @media only screen and (max-width: 560px) {
   .container-header-left {
@@ -326,9 +359,10 @@ footer {
   }
 
   .container-header-center {
+    font-size: 75%;
     grid-row: 1;
     grid-column: 1/ span 3;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 5%;
   }
 
@@ -341,15 +375,12 @@ footer {
   .profile-name {
     font-size: 200%;
     grid-column: 1/ span2;
-    margin: 10px auto;
+    margin: auto;
   }
 
   #profile-picture {
-    grid-column: 1/ span2;
-    margin-top: 10%;
-    object-fit: contain;
-    width: 100vw;
-
+    grid-column: 1/ span 2;
+    
   }
 
   .aboutme-container {

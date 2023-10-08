@@ -8,12 +8,18 @@ body
 	display: grid;
 	grid-template-columns: 30% auto 30%;
 	grid-gap: 2%;
+  
 }
-
+img{
+  border-radius: 10%;
+  margin: 1% 1%;
+}
 .grid-container > div{
 	text-align: center;
     font-family: 'Segoe UI';
 	border: 3px dashed black;
+  border-radius: 5%;
+  margin: 0 5%;
 }
 
 #header{
@@ -94,6 +100,10 @@ body
 {
     margin-left: auto;
     font-size: auto;
+}
+
+#footer{
+  font-size: 100%;
 }
 
 @media only screen and (max-width: 768px) {
